@@ -35,3 +35,5 @@ env2/
 Thumbs.db
 
 .env
+
+/flagged
