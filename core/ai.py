@@ -7,6 +7,14 @@ load_dotenv(
     dotenv_path='ops/.env',
 )
 
+with open("prompts/assistant.txt", "r") as f:
+    assistant_prompt = f.read()
+
+with open("prompts/instructions.txt", "r") as f:
+    instructions = f.read()
+
+instructions = "" if not instructions else instructions
+
 client = OpenAI(
     api_key=os.getenv('OPENAI_API_KEY'),
 )
@@ -18,9 +26,9 @@ def upload_file_to_openai(csv_file_path):
     )
     return file.id
 
-def create_assistant(file_id):
+def create_assistant(file_id, assistant_prompt=assistant_prompt):
     assistant = client.beta.assistants.create(
-        instructions="You are a data analyst assistant when given a requirement and a csv file analyse the csv file and answer if the requirement is satisfied.",
+        instructions=assistant_prompt,
         model="gpt-4-1106-preview",
         tools=[{"type": "code_interpreter"}],
         file_ids=[file_id]
@@ -40,10 +48,11 @@ def create_thread(requirements, file_id):
     )
     return thread.id
 
-def create_run(assistant_id, thread_id):
+def create_run(assistant_id, thread_id, instructions=instructions):
     run = client.beta.threads.runs.create(
         thread_id=thread_id,
-        assistant_id=assistant_id
+        assistant_id=assistant_id,
+        instructions=instructions
     )
     return run.id
 
