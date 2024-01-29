@@ -29,7 +29,7 @@ def upload_file_to_openai(csv_file_path):
 def create_assistant(file_id, assistant_prompt=assistant_prompt):
     assistant = client.beta.assistants.create(
         instructions=assistant_prompt,
-        model="gpt-4-1106-preview",
+        model="gpt-4",
         tools=[{"type": "code_interpreter"}],
         file_ids=[file_id]
     )
