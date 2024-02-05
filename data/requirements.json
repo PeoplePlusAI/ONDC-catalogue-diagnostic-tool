@@ -1,0 +1,82 @@
+[
+    {
+        "buyer_name": "PlaceOrder",
+        "requirements": [
+            "Product name must include the brand name, actual name and size of the product as part of the overall name e.g. LaxmiBhog atta 1KG bag",
+            "Every product must have high quality images (preferably 500x500 px)",
+            "Each product must have meaningful and related short and full description associated with the product",
+            "Slab options will be shown in a separate slab table for those products who have more than one pricing slab",
+            "All variants of a product will be shown in a variants section sorted by variant name in a horizontal scrollable section"
+        ]
+    },
+    {
+        "buyer_name": "MyStore",
+        "requirements": [
+            "The product must have all the required fields defined as defined in the current ONDC protocol specification.", 
+            "The product must have valid level1 and level2 categories as per the ONDC protocol taxonomy.", 
+            "The product must have one or more images that describes the product. The images should have minimum resolution of 300px x 300px. The images should not be placeholder images or seller logos.", 
+            "The product must have one of the two statuary groups. Each of the statuary groups have several fields defined that are mandatory to comply with legal metrology and other laws."
+        ]
+    },
+    {
+        "buyer_name": "NovoPay",
+        "requirements": [
+            "Mandatory attributes of Products in grocery category are Category Name, Product Name, Mrp, Main Image, Fssai License No, Time To Ship, Cancellable, Returnable, Customer Support Phone, Available On Cod, Nutritional Info, Additives Info, Fssai License No, Common Or Generic Name Of Commodity, Manufacturer Name, Manufacturer Address, Month Year Of Manufacture Packing Import, Product Symbol, Return Window, Supports Return Pickup",
+            "Mandatory attributes of Products in other category are Category Name, Product Name, Mrp, Main Image, Customer Support, Time To Ship, Locations, Cancellable, Returnable, Available On Cod, Common Or Generic Name, Country Of Origin, Manufacturer Name, Manufacturer Address, Time To Ship, Month Year Of Manufacture Packing Import, FSSAI ( in case of Food Category), Veg/Non Veg ( in case of Food Category)", 
+            "Other Mandatory Details Seller Apps - Name , Symbol, Long description, Short description,Images, Seller’s- Name , Symbol, Long description, Short description,Images, Location, FSSAI( in case of Food), Customer care contact details , Store timings , Working days , Serviceability. Products - Category ID, Location ID, fulfilment ID"
+        ]
+    },
+    {
+        "buyer_name": "Rubaru",
+        "requirements": [
+            "Mandatory attributes of Products in grocery category are Category Name, Product Name, Mrp, Main Image, Fssai License No, Time To Ship, Cancellable, Returnable, Customer Support Phone, Available On Cod, Nutritional Info, Additives Info, Fssai License No, Common Or Generic Name Of Commodity, Manufacturer Name, Manufacturer Address, Month Year Of Manufacture Packing Import, Product Symbol, Return Window, Supports Return Pickup",
+            "Mandatory attributes of Products in other category are Category Name, Product Name, Mrp, Main Image, Customer Support, Time To Ship, Locations, Cancellable, Returnable, Available On Cod, Common Or Generic Name, Country Of Origin, Manufacturer Name, Manufacturer Address, Time To Ship, Month Year Of Manufacture Packing Import, FSSAI ( in case of Food Category), Veg/Non Veg ( in case of Food Category)", 
+            "Other Mandatory Details Seller Apps - Name , Symbol, Long description, Short description,Images, Seller’s- Name , Symbol, Long description, Short description,Images, Location, FSSAI( in case of Food), Customer care contact details , Store timings , Working days , Serviceability. Products - Category ID, Location ID, fulfilment ID"
+        ]
+    },
+    {
+        "buyer_name": "Craftsvilla",
+        "requirements": [
+            "Mandatory attributes of Products in grocery category are Category Name, Product Name, Mrp, Main Image, Fssai License No, Time To Ship, Cancellable, Returnable, Customer Support Phone, Available On Cod, Nutritional Info, Additives Info, Fssai License No, Common Or Generic Name Of Commodity, Manufacturer Name, Manufacturer Address, Month Year Of Manufacture Packing Import, Product Symbol, Return Window, Supports Return Pickup",
+            "Mandatory attributes of Products in other category are Category Name, Product Name, Mrp, Main Image, Customer Support, Time To Ship, Locations, Cancellable, Returnable, Available On Cod, Common Or Generic Name, Country Of Origin, Manufacturer Name, Manufacturer Address, Time To Ship, Month Year Of Manufacture Packing Import, FSSAI ( in case of Food Category), Veg/Non Veg ( in case of Food Category)", 
+            "Other Mandatory Details Seller Apps - Name , Symbol, Long description, Short description,Images, Seller’s- Name , Symbol, Long description, Short description,Images, Location, FSSAI( in case of Food), Customer care contact details , Store timings , Working days , Serviceability. Products - Category ID, Location ID, fulfilment ID"
+        ]
+    },
+    {
+        "buyer_name": "Signcatch",
+        "requirements": [
+            "Product name must include the brand name, actual name and size of the product as partof the overall name e.g. Chaiom Digestive Green Tea 100gm loose tea", 
+            "Each product must have relevant short and full description", 
+            "The product must have valid level1 and level2 categories as per the ONDC protocol taxonomy.", 
+            "The product must have four images (front, back, left & right Side) that describes the product. The images should have minimum resolution of 500px x 500px.", 
+            "Volumetric Pricing to be shown for all the products that have multiple price slab."
+        ]
+    },
+    {
+        "buyer_name": "Meesho",
+        "requirements": [
+            "Mandatory attributes of Products in grocery category are Category Name, Product Name, Mrp, Main Image, Fssai License No, Time To Ship, Cancellable, Returnable, Customer Support Phone, Available On Cod, Nutritional Info, Additives Info, Fssai License No, Common Or Generic Name Of Commodity, Manufacturer Name, Manufacturer Address, Month Year Of Manufacture Packing Import, Product Symbol, Return Window, Supports Return Pickup",
+            "Mandatory attributes of Products in other category are Category Name, Product Name, Mrp, Main Image, Customer Support, Time To Ship, Locations, Cancellable, Returnable, Available On Cod, Common Or Generic Name, Country Of Origin, Manufacturer Name, Manufacturer Address, Time To Ship, Month Year Of Manufacture Packing Import, FSSAI ( in case of Food Category), Veg/Non Veg ( in case of Food Category)", 
+            "Other Mandatory Details Seller Apps - Name , Symbol, Long description, Short description,Images, Seller’s- Name , Symbol, Long description, Short description,Images, Location, FSSAI( in case of Food), Customer care contact details , Store timings , Working days , Serviceability. Products - Category ID, Location ID, fulfilment ID"
+        ]
+    },
+    {
+        "buyer_name": "Spicemoney",
+        "requirements": [
+            "Mandatory attributes of Products in grocery category are Category Name, Product Name, Mrp, Main Image, Fssai License No, Time To Ship, Cancellable, Returnable, Customer Support Phone, Available On Cod, Nutritional Info, Additives Info, Fssai License No, Common Or Generic Name Of Commodity, Manufacturer Name, Manufacturer Address, Month Year Of Manufacture Packing Import, Product Symbol, Return Window, Supports Return Pickup",
+            "Mandatory attributes of Products in other category are Category Name, Product Name, Mrp, Main Image, Customer Support, Time To Ship, Locations, Cancellable, Returnable, Available On Cod, Common Or Generic Name, Country Of Origin, Manufacturer Name, Manufacturer Address, Time To Ship, Month Year Of Manufacture Packing Import, FSSAI ( in case of Food Category), Veg/Non Veg ( in case of Food Category)", 
+            "Other Mandatory Details Seller Apps - Name , Symbol, Long description, Short description,Images, Seller’s- Name , Symbol, Long description, Short description,Images, Location, FSSAI( in case of Food), Customer care contact details , Store timings , Working days , Serviceability. Products - Category ID, Location ID, fulfilment ID"
+        ]
+    },
+    {
+        "buyer_name": "MagicPin",
+        "requirements": [
+            "Mandatory fields for products are title, description, images, price, type (veg, non veg, contains egg), quantity/size/portion.",
+            "Good to have fields are rating and reviews, nutritial information, ingredients",
+            "Mandatory fields for pharmacy catagory products are shelf life or expiry date, prescription required, ingredient, Salt, product quantity per pack, quantity/size/portion, manufacturer details/generic name, dosage or strength, country of origin",
+            "Good to have fields are safety information, side effects.",
+            "mandatory fields for grocery category are shelf life or expiry date, country of origin",
+            "Good to have fields are brand"
+        ]
+    }
+]
