@@ -1,0 +1,16 @@
+{
+    "PlaceOrder": {
+        "expected_outcomes": [
+            {
+                "requirement": "Product name must include the brand name, actual name and size of the product as part of the overall name e.g. LaxmiBhog atta 1KG bag",
+                "passed": true,
+                "rows_failed": []
+            },
+            {
+                "requirement": "Every product must have high quality images (preferably 500x500 px)",
+                "passed": false,
+                "rows_failed": []
+            }
+        ]
+    }
+}
