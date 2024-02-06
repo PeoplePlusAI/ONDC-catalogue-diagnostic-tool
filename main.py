@@ -1,11 +1,10 @@
 import gradio as gr
-import pandas as pd
-from core.ai import main_logic
+from core.ai import validate_catalogue
 
 
 # Create the Gradio interface
 iface = gr.Interface(
-    fn=main_logic, 
+    fn=validate_catalogue, 
     inputs=[
         gr.File(type="filepath", label="Upload CSV"),
         gr.Textbox(label="Requirements", placeholder="Enter your requirements here")

@@ -10,3 +10,7 @@ def xlsx_to_csv(xlsx_file_path):
     return xlsx_file_path.replace('.xlsx', '.csv')
 
 
+def load_csv(csv_file_path):
+    return pd.read_csv(csv_file_path)
+
+
