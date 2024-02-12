@@ -44,5 +44,11 @@ class TestColumnExtractorIntegration(unittest.TestCase):
 
         self.assertEqual(result['related_columns'], ['product_description', 'other_details'])
 
+        requirement = "Product name must include the brand name, actual name and size of the product as part of the overall name e.g. LaxmiBhog atta 1KG bag"
+
+        result = extract_columns(requirement, self.client, MultiClassPrediction)
+
+        self.assertEqual(result["related_columns"], ["Product Name","Brand","Pack Size"])
+
 if __name__ == '__main__':
     unittest.main()
