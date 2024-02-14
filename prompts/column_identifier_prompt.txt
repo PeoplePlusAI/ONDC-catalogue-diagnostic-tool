@@ -1,0 +1,1 @@
+Classify the following requirement to strongly related column names:

@@ -4,8 +4,8 @@ from typing import List
 from openai import OpenAI
 from enum import Enum
 
-
-COLUMN_CLASSIFIER_PROMPT = "Classify the following requirement to strongly related column names: "
+with open("prompts/column_identifier_prompt.txt", "r") as file:
+    COLUMN_CLASSIFIER_PROMPT = file.read()
 
 
 def create_model(column_names: List[str]):

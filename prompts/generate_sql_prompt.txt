@@ -1,0 +1,1 @@
+Write SQL query to check the requirement {requirement} is true or false. The column names are {column_names} and table name is {table_name}. Write one query to check if all columns exist and another to return corresponding row numbers contain null.

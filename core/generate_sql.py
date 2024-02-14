@@ -3,6 +3,10 @@ from pydantic import BaseModel
 from typing import List
 from openai import OpenAI
 
+with open("prompts/generate_sql_prompt.txt", "r") as file:
+    GENERATE_SQL_PROMPT = file.read()
+
+
 class SQLQUERYMODEL(BaseModel):
     """
     Class for an SQL QUERY 
@@ -16,18 +20,18 @@ class RESPONSEMODEL(BaseModel):
     passed: bool
     failed_rows: List[int]
 
-def compose_generate_prompt(requirement: str, column_names: str, table_name: str):
+def compose_generate_prompt(requirement: str, column_names: str, table_name: str, sql_prompt):
     """
     Compose the prompt for the SQL query
     """
-    return f"Write SQL query to check the requirement {requirement} is true or false. The column names are {column_names} and table name is {table_name}. Write one query to check columns exist and another to return corresponding row numbers contain null values."
+    return sql_prompt.format(requirement=requirement, column_names=column_names, table_name=table_name)
 
 
-def generate_sql_queries(requirement: str, column_names: str, client: OpenAI, model: str = "gpt-4"):
+def generate_sql_queries(requirement: str, column_names: str, client: OpenAI, model: str = "gpt-4", sql_prompt=GENERATE_SQL_PROMPT):
     """
     Extracts the columns from the requirement
     """
-    requirement_prompt = compose_generate_prompt(requirement, column_names, "products")
+    requirement_prompt = compose_generate_prompt(requirement, column_names, "products", sql_prompt)
     return run_instructor(requirement_prompt, client, SQLQUERYMODEL, model)
 
 def compose_interpret_prompt(response_1: str, response_2: str):
