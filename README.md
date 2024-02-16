@@ -33,6 +33,9 @@ Say for example if one buyer app requires short and long description about produ
 8. Based on the report, the buyer app will decide whether it should proceed to the next stage or send a report to the seller app with inconsistencies in the catalogue.
 
 
+## UI mockup
+
+![UI](docs/UI.png)
 
 ## How to run the POC
 
