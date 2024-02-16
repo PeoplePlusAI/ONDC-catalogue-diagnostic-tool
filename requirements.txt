@@ -2,3 +2,7 @@ gradio
 openai
 pandas
 python-dotenv
+instructor
+pydantic
+transformers
+pytest
