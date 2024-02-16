@@ -80,10 +80,9 @@ def run_sql_queries(csv_file_path, column_query, row_query):
     query2 = row_query
     df_query_result = execute_sql_query(query1, conn)
     column_query_result = extract_column_query_result(df_query_result)
+    passed = False
     if column_query_result == True:
         df_query_result = execute_sql_query(query2, conn)
-        row_query_result = extract_row_query_result(df_query_result)
-        return {"passed": column_query_result, "failed_rows": row_query_result}
-    else:
-        return {"passed": column_query_result, "failed_rows": []}
-    
+        failed_rows = extract_row_query_result(df_query_result)
+        passed = False if failed_rows else True
+    return {"passed": passed, "failed_rows": failed_rows}

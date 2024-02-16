@@ -4,6 +4,7 @@ from core.generate_sql import (
     generate_sql_queries
 )
 from utils.sql_utils import run_sql_queries
+from utils.instructor_utils import patch_client
 from openai import OpenAI
 from dotenv import load_dotenv
 import os
@@ -16,15 +17,22 @@ client = OpenAI(
     api_key=os.getenv("OPENAI_API_KEY")
 )
 
+client = patch_client(client)
+
 def main_logic(csv_file_path, requirement, model):
+    print(requirement)
     column_predictions = extract_columns(requirement, client, model)
+    print(column_predictions)
     columns_str = ", ".join(column_predictions.get("related_columns"))
     sql_queries = generate_sql_queries(
         requirement, columns_str, client
     )
+    print(sql_queries)
     queries = sql_queries.get("queries")
     query1, query2 = queries[0], queries[1]
     query_results = run_sql_queries(csv_file_path, query1, query2)
+    print(query_results)
+    query_results["requirement"] = requirement
     return query_results
     
 
