@@ -74,7 +74,7 @@ def run_sql_queries(csv_file_path, column_query, row_query):
     Returns:
     - sql_queries: The generated SQL queries.
     """
-    conn = connect_to_database('../db/my_database.db')
+    conn = connect_to_database('db/my_database.db')
     df = import_csv_to_database(csv_file_path, 'products', conn)
     query1 = column_query
     query2 = row_query
